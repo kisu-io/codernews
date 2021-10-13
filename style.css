@@ -1,0 +1,86 @@
+.news-container {
+    border: 1px solid black;
+    display: flex;
+}
+
+body {
+    background-color: #e9ebee;
+    position: relative;
+}
+
+.title {
+    font-size: 4em;
+    color: #355691;
+    font-family: "Modak", cursive;
+}
+
+i {
+    margin-right: 1rem;
+}
+
+.article {
+    width: 70%;
+    padding: 3rem;
+    list-style: none;
+    border-radius: 2.5%;
+    background-color: white;
+    font-family: Red Hat Display", sans-serif;
+ transition all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.article:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+img {
+    width: 100%;
+}
+
+#newsList {
+    margin: 0em;
+    overflow-y: auto;
+}
+
+#categoriesList {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -15px;
+    padding-left: 480px;
+}
+
+.category-item {
+    margin: 5px;
+    font-weight: 500;
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        color: red;
+    }
+    .article {
+        width: 95%;
+        padding: 2rem;
+        margin: 0.1rem;
+    }
+    li {
+        padding: 0px;
+        font-size: 2.25rem;
+    }
+    p {
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+        -ms-word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    a {
+        font-size: 2rem;
+    }
+}
