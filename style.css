@@ -84,3 +84,19 @@ img {
         font-size: 2rem;
     }
 }
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.chart-container {
+    border: 1px solid black;
+    margin: 5px;
+    max-width: 800px;
+    max-height: 1000px;
+    justify-content: center;
+}
